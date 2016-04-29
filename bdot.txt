@@ -1,0 +1,56 @@
+BDot and detumble psuedo code
+
+void Detumble(xthresh, ythresh, zthresh)) {
+	
+	unsigned int torquerCycles = 0
+	unsigned char xDirection = 1;
+	unsigned char yDirection = 1;
+	unsigned char zDirection = 1;
+	
+	while (torquercycles < tooMuchBatteryDrain){
+		if (xdot * xdot > xthresh){
+			runXtorquer * xDirection
+			torquerCycles ++	
+		}
+		
+		if (ydot * ydot > ythresh){
+			runYtorquer * yDirection
+			torquerCycles ++			
+		}
+		
+		if (zdot * zdot > zthresh){
+			runZtorquer * zDirection
+			torquerCycles ++			
+		}
+		
+		check newBdot values
+		compare Bdot to old x,y,z dot values
+		if worse, set x,y,z direction to -1
+		set new x,y, zdot to x,y,z dot
+		
+		if ((xdot * xdot < xthresh) && (ydot*ydot < ythresh) && (zdot*zdot < zthresh)){
+			break;
+		}
+	}
+
+
+}
+
+void getBDot (unsigned int x, unsigned int y, unsigned int z){
+		//get x, y, z value from register
+	int x = ;
+	int y = ;
+	int z = ;
+		
+	//wait samplePeriod
+	
+	//get newx, newy, newz from register
+	int newx = ;
+	int newy = ;
+	int newz = ;
+	
+	
+	int xdot = (newx - x)/samplePeriod;
+	int ydot = (newy - y)/samplePeriod;
+	int zdot = (newz - z)/samplePeriod;
+}
